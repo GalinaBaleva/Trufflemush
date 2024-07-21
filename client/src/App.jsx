@@ -9,6 +9,7 @@ import Services from './components/our-services/OurServices';
 import Newsletter from './components/newslette/Newsletter';
 import Projects from './components/projects/Projects';
 import Team from './components/team/Team';
+import Testimonial from './components/testimonial/Testimonial';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,12 +32,13 @@ function App() {
       {/* Spinner End */}
       <Header />
       <Routes>
-        <Route path='/' element={<Services />} />
-        <Route path='/' element={<AboutUs />} />
-        <Route path='/' element={<Facts />} />
-        <Route path='/' element={<Projects />} />
-        <Route path='/' element={<Newsletter />} />
-        <Route path='/' element={<Team />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/about' element={<AboutUs />} />
+        <Route path='/facts' element={<Facts />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/newslatter' element={<Newsletter />} />
+        <Route path='/testimonial' element={<Testimonial />} />
+
       </Routes>
 
       <Footer />

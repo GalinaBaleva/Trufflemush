@@ -18,16 +18,16 @@ export default function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav mx-auto py-0">
-                        <Link to="index.html" className="nav-item nav-link active">
+                        <Link to="/" className="nav-item nav-link active">
                             Home
                         </Link>
-                        <Link to="about.html" className="nav-item nav-link">
+                        <Link to="/about" className="nav-item nav-link">
                             About
                         </Link>
-                        <Link to="service.html" className="nav-item nav-link">
+                        <Link to="/services" className="nav-item nav-link">
                             Service
                         </Link>
-                        <Link to="project.html" className="nav-item nav-link">
+                        <Link to="/projects" className="nav-item nav-link">
                             Project
                         </Link>
                         <div className="nav-item dropdown">
@@ -39,13 +39,13 @@ export default function Header() {
                                 Pages
                             </Link>
                             <div className="dropdown-menu m-0">
-                                <Link to="team.html" className="dropdown-item">
+                                <Link to="/team" className="dropdown-item">
                                     Our Team
                                 </Link>
-                                <Link to="testimonial.html" className="dropdown-item">
+                                <Link to="/testimonial" className="dropdown-item">
                                     Testimonial
                                 </Link>
-                                <Link to="404.html" className="dropdown-item">
+                                <Link to="/404" className="dropdown-item">
                                     404 Page
                                 </Link>
                             </div>
