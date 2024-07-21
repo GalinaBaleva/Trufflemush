@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom'
+
 export default function Header() {
     return (
         <div className="container-xxl position-relative p-0">
             <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" className="navbar-brand p-0">
+                <Link to="" className="navbar-brand p-0">
                     <h1 className="m-0">Trufflemush</h1>
                     {/* <img src="img/logo.png" alt="Logo"> */}
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -16,54 +18,54 @@ export default function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav mx-auto py-0">
-                        <a href="index.html" className="nav-item nav-link active">
+                        <Link to="index.html" className="nav-item nav-link active">
                             Home
-                        </a>
-                        <a href="about.html" className="nav-item nav-link">
+                        </Link>
+                        <Link to="about.html" className="nav-item nav-link">
                             About
-                        </a>
-                        <a href="service.html" className="nav-item nav-link">
+                        </Link>
+                        <Link to="service.html" className="nav-item nav-link">
                             Service
-                        </a>
-                        <a href="project.html" className="nav-item nav-link">
+                        </Link>
+                        <Link to="project.html" className="nav-item nav-link">
                             Project
-                        </a>
+                        </Link>
                         <div className="nav-item dropdown">
-                            <a
-                                href="#"
+                            <Link
+                                to="#"
                                 className="nav-link dropdown-toggle"
                                 data-bs-toggle="dropdown"
                             >
                                 Pages
-                            </a>
+                            </Link>
                             <div className="dropdown-menu m-0">
-                                <a href="team.html" className="dropdown-item">
+                                <Link to="team.html" className="dropdown-item">
                                     Our Team
-                                </a>
-                                <a href="testimonial.html" className="dropdown-item">
+                                </Link>
+                                <Link to="testimonial.html" className="dropdown-item">
                                     Testimonial
-                                </a>
-                                <a href="404.html" className="dropdown-item">
+                                </Link>
+                                <Link to="404.html" className="dropdown-item">
                                     404 Page
-                                </a>
+                                </Link>
                             </div>
                         </div>
-                        <a href="contact.html" className="nav-item nav-link">
+                        <Link to="contact.html" className="nav-item nav-link">
                             Contact
-                        </a>
+                        </Link>
                     </div>
-                    <a
-                        href=""
+                    <Link
+                        to=""
                         className="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
                     >
                         Log In
-                    </a>
-                    <a
-                        href=""
+                    </Link>
+                    <Link
+                        to=""
                         className="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
                     >
                         Register
-                    </a>
+                    </Link>
                 </div>
             </nav>
             <div className="container-xxl bg-primary hero-header">
@@ -78,18 +80,18 @@ export default function Header() {
                                 dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam
                                 sit justo amet ipsum vero ipsum clita lorem
                             </p>
-                            <a
-                                href=""
+                            <Link
+                                to=""
                                 className="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft"
                             >
                                 Read More
-                            </a>
-                            <a
-                                href=""
+                            </Link>
+                            <Link
+                                to=""
                                 className="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight"
                             >
                                 Contact Us
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-lg-6 text-center text-lg-start">
                             <img
