@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom'
+
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import AboutUs from './components/about-us/AboutUs';
@@ -28,12 +30,15 @@ function App() {
         </div> */}
       {/* Spinner End */}
       <Header />
-      <Services />
-      <AboutUs />
-      <Facts />
-      <Projects />
-      <Newsletter />
-      <Team />
+      <Routes>
+        <Route path='/' element={<Services />} />
+        <Route path='/' element={<AboutUs />} />
+        <Route path='/' element={<Facts />} />
+        <Route path='/' element={<Projects />} />
+        <Route path='/' element={<Newsletter />} />
+        <Route path='/' element={<Team />} />
+      </Routes>
+
       <Footer />
       <a href="#" className="btn btn-lg btn-secondary btn-lg-square back-to-top">
         // <i className="bi bi-arrow-up" />
