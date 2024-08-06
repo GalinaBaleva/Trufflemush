@@ -50,7 +50,7 @@ export default function Header() {
                                 </Link>
                             </div>
                         </div>
-                        <Link to="contact.html" className="nav-item nav-link">
+                        <Link to="/contact" className="nav-item nav-link">
                             Contact
                         </Link>
                     </div>

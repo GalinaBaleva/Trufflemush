@@ -10,6 +10,8 @@ import Newsletter from './components/newslette/Newsletter';
 import Projects from './components/projects/Projects';
 import Team from './components/team/Team';
 import Testimonial from './components/testimonial/Testimonial';
+import Contact from './components/facts/contact/Contact';
+import NotFound from './components/404/404';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +40,12 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/newslatter' element={<Newsletter />} />
         <Route path='/testimonial' element={<Testimonial />} />
+        <Route path='/team' element={<Team />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/404' element={<NotFound />} />
+
+
+
 
       </Routes>
 
