@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import AboutUs from './components/about-us/AboutUs';
+import Home from './components/home/Home';
 import Facts from './components/facts/Facts';
 import Services from './components/our-services/OurServices';
 import Newsletter from './components/newslette/Newsletter';
@@ -34,8 +34,8 @@ function App() {
       {/* Spinner End */}
       <Header />
       <Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/services' element={<Services />} />
-        <Route path='/about' element={<AboutUs />} />
         <Route path='/facts' element={<Facts />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/newslatter' element={<Newsletter />} />
@@ -43,10 +43,6 @@ function App() {
         <Route path='/team' element={<Team />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/404' element={<NotFound />} />
-
-
-
-
       </Routes>
 
       <Footer />

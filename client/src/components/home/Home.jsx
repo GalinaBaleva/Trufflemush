@@ -1,4 +1,4 @@
-export default function AboutUs() {
+export default function Home() {
     return (
         <div className="container-xxl py-5">
             <div className="container py-5 px-lg-5">
